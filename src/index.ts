@@ -1,8 +1,9 @@
 import { McpAgent } from "agents/mcp";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { FigmaService } from "./services/figma.js";
-import { simplifyRawFigmaObject, allExtractors } from "./extractors/index.js";
+import { FigmaService } from "./services/figma";
+import { simplifyRawFigmaObject, allExtractors } from "./extractors";
+
 
 // Define our MCP agent with tools
 export class MyMCP extends McpAgent {
